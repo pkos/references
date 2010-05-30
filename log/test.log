@@ -1,0 +1,814 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:24:04) [GET]
+Rendering pages/contact
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:24:04) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:25:14) [GET]
+Rendering pages/contact
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:25:14) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:26:22) [GET]
+Rendering pages/about
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:26:22) [GET]
+Rendering pages/contact
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:26:22) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:28:50) [GET]
+Rendering pages/about
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:28:50) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:28:50) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:28:53) [GET]
+Rendering pages/about
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:28:54) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:28:54) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:29:49) [GET]
+Rendering pages/about
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:29:49) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:29:49) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:34:21) [GET]
+Rendering pages/about
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:34:21) [GET]
+Rendering pages/about
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:34:21) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:34:21) [GET]
+Rendering pages/contect
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:34:22) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:34:22) [GET]
+Rendering pages/home
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+Rendering pages/home
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:36:15) [GET]
+Rendering pages/home
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (1.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:37:27) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 2) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (1.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:37:37) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:17) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:17) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:38:18) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:38:18) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:18) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:18) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+Rendering pages/about
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:48) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:38:58) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+Rendering pages/about
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:39:15) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:39:35) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+Rendering pages/contact
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contect (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:31) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:50) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 1) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (1.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (4.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 5) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:54) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:41:57) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/about
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/about
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:44:44) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/about
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/about
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:46:29) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 00:51:06) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/home]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
