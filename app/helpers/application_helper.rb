@@ -11,5 +11,14 @@ module ApplicationHelper
     end
   end
   
+  def logo
+    logo = image_tag("logo.png", :alt => "Reference Stacker App", :class => "round")
+  end
+  
+  require "webrat"
+
+  Webrat.configure do |config|
+    config.mode = :rails
+  end
   
 end
