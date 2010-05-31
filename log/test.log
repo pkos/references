@@ -9495,3 +9495,2739 @@ Rendered layouts/_header (2.0ms)
 Rendered layouts/_footer (0.7ms)
 Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/]
   [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (70.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'ca4202da41f3a59c42cb160ec613588d9800306733f54f2f9a25e66174145611', '6a0d7b4021c8732732532ce09e5265a4d1abdcc4870838bbaad9968a50967a06', '2010-05-31 03:41:56', '2010-05-31 03:41:56', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (2.9ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 28ms (View: 17, DB: 103) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 88ms (View: 88, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+  Parameters: {"id"=>#<User id: 79, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:41:57", updated_at: "2010-05-31 03:41:57", encrypted_password: "2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada...", salt: "5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://test.host/users/79]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+  Parameters: {"id"=>#<User id: 80, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:41:57", updated_at: "2010-05-31 03:41:57", encrypted_password: "2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada...", salt: "5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/80]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+  Parameters: {"id"=>#<User id: 81, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:41:57", updated_at: "2010-05-31 03:41:57", encrypted_password: "2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada...", salt: "5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/81]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada306aae97f75ec', '5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39c70b24db9abd1', '2010-05-31 03:41:57', '2010-05-31 03:41:57', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+  Parameters: {"id"=>#<User id: 82, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:41:57", updated_at: "2010-05-31 03:41:57", encrypted_password: "2a9e89c1bf4f2281535f768e4847b769d2e9f02f1fce379dada...", salt: "5d01f8eeb8eee1888e97fa0620791cb93de9f4ad20a0041aa39...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/82]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:41:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (246.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '191590ab90cd4960ea5637ba528c07d7f25152f3453d0e170dcfe193f90e61ab', '6a0ffdc1b9867dcb603841d010127dede68bcf361b7c96f979ae3a34344993c4', '2010-05-31 03:50:02', '2010-05-31 03:50:02', 'user@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (296.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (34.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.9ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 27ms (View: 16, DB: 606) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 86ms (View: 86, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+  Parameters: {"id"=>#<User id: 93, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:50:03", updated_at: "2010-05-31 03:50:03", encrypted_password: "f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4...", salt: "bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164ae...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://test.host/users/93]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+  Parameters: {"id"=>#<User id: 94, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:50:03", updated_at: "2010-05-31 03:50:03", encrypted_password: "f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4...", salt: "bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164ae...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/94]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+  Parameters: {"id"=>#<User id: 95, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:50:03", updated_at: "2010-05-31 03:50:03", encrypted_password: "f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4...", salt: "bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164ae...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/95]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4b912e3fd817fa', 'bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164aebada455e50281', '2010-05-31 03:50:03', '2010-05-31 03:50:03', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+  Parameters: {"id"=>#<User id: 96, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:50:03", updated_at: "2010-05-31 03:50:03", encrypted_password: "f02266c227ad1d9a8d1e98117f145a317c15e24410b4105d8c4...", salt: "bd19f47fd29e0523ac022ced0f2213c300bed0af7a5443164ae...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 12ms (View: 11, DB: 2) | 200 OK [http://test.host/users/96]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:50:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:50:04) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (231.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '1b3951e7f22788f425535256b5bfb8791853c396efa852db58b51f91ce5b25e2', '40510f07587102ceee5628eb36b7075bd15abbc6c088805b298bd33d27f1f9db', '2010-05-31 03:58:40', '2010-05-31 03:58:40', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:58:40) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.8ms)
+Rendered layouts/_header (2.7ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 26ms (View: 16, DB: 266) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (4.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 12ms (View: 12, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 29ms (View: 18, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 22:58:41) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 22:58:41) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.5ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd7558ebde1ed6ea3', 'fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905fe51ea2cf0a595', '2010-05-31 03:58:41', '2010-05-31 03:58:41', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+  Parameters: {"id"=>#<User id: 107, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:58:41", updated_at: "2010-05-31 03:58:41", encrypted_password: "2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd75...", salt: "fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905f...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://test.host/users/107]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd7558ebde1ed6ea3', 'fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905fe51ea2cf0a595', '2010-05-31 03:58:41', '2010-05-31 03:58:41', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+  Parameters: {"id"=>#<User id: 108, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:58:41", updated_at: "2010-05-31 03:58:41", encrypted_password: "2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd75...", salt: "fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905f...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/108]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd7558ebde1ed6ea3', 'fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905fe51ea2cf0a595', '2010-05-31 03:58:41', '2010-05-31 03:58:41', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+  Parameters: {"id"=>#<User id: 109, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:58:41", updated_at: "2010-05-31 03:58:41", encrypted_password: "2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd75...", salt: "fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905f...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/109]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd7558ebde1ed6ea3', 'fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905fe51ea2cf0a595', '2010-05-31 03:58:41', '2010-05-31 03:58:41', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+  Parameters: {"id"=>#<User id: 110, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 03:58:41", updated_at: "2010-05-31 03:58:41", encrypted_password: "2d1305c1431771f96e795cc6aefb4efc4523829fbdfe929dd75...", salt: "fca03d9fbedd35dbfb12782b5610c22571494072fcef13d905f...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/110]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 22:58:41) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (65.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (18.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.9ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 27ms (View: 16, DB: 111) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 82ms (View: 82, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 30ms (View: 18, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 17, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('New User', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'user@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:09:39) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Redirected to http://test.host/users/121
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:09:39) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 16, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:09:39) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b6d12413bedb01', 'eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2d627c55936f93', '2010-05-31 04:09:39', '2010-05-31 04:09:39', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:09:39) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 122, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:09:39", updated_at: "2010-05-31 04:09:39", encrypted_password: "365fe66a651638ca8eb3341a4ab26a4b97a09da3d63801de57b...", salt: "eba12dddc0da61d9c6e7ec9f0a44263ecc6b60f35d5fcf176a2...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://test.host/users/122]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baab6a73013d97c5', '186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffaab5e2df6168d3', '2010-05-31 04:09:40', '2010-05-31 04:09:40', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 123, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:09:40", updated_at: "2010-05-31 04:09:40", encrypted_password: "954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baa...", salt: "186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffa...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/123]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baab6a73013d97c5', '186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffaab5e2df6168d3', '2010-05-31 04:09:40', '2010-05-31 04:09:40', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 124, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:09:40", updated_at: "2010-05-31 04:09:40", encrypted_password: "954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baa...", salt: "186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffa...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 12ms (View: 11, DB: 2) | 200 OK [http://test.host/users/124]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', '954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baab6a73013d97c5', '186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffaab5e2df6168d3', '2010-05-31 04:09:40', '2010-05-31 04:09:40', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 125, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:09:40", updated_at: "2010-05-31 04:09:40", encrypted_password: "954271fbafd5bdc4f4d4d9116f986692924b8906c35a0a66baa...", salt: "186df161eaa54210e6dbb1f07a1e1456f8ab8c0fa64124cfffa...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 100ms (View: 10, DB: 2) | 200 OK [http://test.host/users/125]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:09:40) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (252.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '5244e16e8998513e153a08cadf9b5f23eaaf1c9adba3c37044279bb6d45e44f2', 'b87124d250e1eca5666b09859afee2f76c0cae6a22024e5f4c305d4209a1b875', '2010-05-31 04:13:59', '2010-05-31 04:13:59', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'user@example.com')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (10.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.9ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_footer (1.5ms)
+Completed in 32ms (View: 21, DB: 289) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 79ms (View: 78, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('New User', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:14:00) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Redirected to http://test.host/users/136
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('New User', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'user@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:14:00) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Redirected to http://test.host/users/137
+Completed in 2ms (DB: 4) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:14:00) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 18ms (View: 17, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:14:00) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 138, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:14:00", updated_at: "2010-05-31 04:14:00", encrypted_password: "a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa1...", salt: "e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://test.host/users/138]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 139, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:14:00", updated_at: "2010-05-31 04:14:00", encrypted_password: "a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa1...", salt: "e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 13ms (View: 12, DB: 2) | 200 OK [http://test.host/users/139]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 140, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:14:00", updated_at: "2010-05-31 04:14:00", encrypted_password: "a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa1...", salt: "e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 99ms (View: 98, DB: 2) | 200 OK [http://test.host/users/140]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa177a48a3e9c447', 'e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc80967d3ebf3ee', '2010-05-31 04:14:00', '2010-05-31 04:14:00', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 141, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:14:00", updated_at: "2010-05-31 04:14:00", encrypted_password: "a8774ebf3632194a988537a502456a26dd482a38e0243bf9fa1...", salt: "e614a525e4cca15e951506842a2f4c12b87b6b54065c6c5b5dc...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/141]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 8, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:14:00) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:14:01) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (2.7ms)
+Rendered layouts/_header (12.3ms)
+Rendered layouts/_footer (1.6ms)
+Completed in 37ms (View: 25, DB: 0) | 200 OK [http://test.host/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:19:17) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (69.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'the_user@foo.bar.org') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'first.last@foo.jp') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@foo,com') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user_at_foo.org') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example.user@foo.') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'USER@EXAMPLE.COM')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (2.9ms)
+Rendered layouts/_header (2.8ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 45ms (View: 35, DB: 106) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"name"=>"Example User", "password_confirmation"=>"foobar", "password"=>"foobar", "email"=>"user@example.com"}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-05-30 23:24:30) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "controller"=>"users", "user"=>{"name"=>"Example User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Example User', '4422950fb3055abc3d649a8b1dcc416e98450766ad189144445ed72fb2611ab3', '49578532f35b79c905e3fb1904e3373479c02c878aa476ccce1b361809f1b330', '2010-05-31 04:24:30', '2010-05-31 04:24:30', 'user@example.com')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/152
+Completed in 11ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/152 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"152", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 152) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://www.example.com/users/152]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 17ms (View: 17, DB: 1) | 200 OK [http://www.example.com/signup]
+REQUESTING PAGE: POST /users with {"commit"=>"Sign up", "user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-05-30 23:24:30) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 64ms (View: 58, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-30 23:24:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('New User', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:24:31) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Redirected to http://test.host/users/153
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('New User', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'user@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:24:31) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Redirected to http://test.host/users/154
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:24:31) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-05-30 23:24:31) [POST]
+  Parameters: {"action"=>"create", "controller"=>"users", "user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.5ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 155, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:24:31", updated_at: "2010-05-31 04:24:31", encrypted_password: "e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0...", salt: "41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 11ms (View: 11, DB: 1) | 200 OK [http://test.host/users/155]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 156, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:24:31", updated_at: "2010-05-31 04:24:31", encrypted_password: "e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0...", salt: "41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/156]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 157, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:24:31", updated_at: "2010-05-31 04:24:31", encrypted_password: "e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0...", salt: "41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 11ms (View: 10, DB: 2) | 200 OK [http://test.host/users/157]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'mhartl@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `email`) VALUES('Michael Hartl', 'e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0f26c50ab7bc4e', '41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613eda91a92246bf', '2010-05-31 04:24:31', '2010-05-31 04:24:31', 'mhartl@example.com')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 158, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2010-05-31 04:24:31", updated_at: "2010-05-31 04:24:31", encrypted_password: "e490ea6b8cf686837b6c082929697678748ad0d66326afb7ad0...", salt: "41b42b8682cd437c36bfdd1d5fab6784b514f8814498ba3e613...">, "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.9ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 12ms (View: 11, DB: 2) | 200 OK [http://test.host/users/158]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/help]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/about]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 0.0.0.0 at 2010-05-30 23:24:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 9ms (View: 9, DB: 0) | 200 OK [http://test.host/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m

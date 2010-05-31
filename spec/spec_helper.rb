@@ -7,6 +7,12 @@ require 'spec/rails'
 
 # Uncomment the next line to use webrat's matchers
 #require 'webrat/integrations/rspec-rails'
+require 'spec/rails'
+require 'webrat'
+
+Webrat.configure do |config|
+  config.mode = :rails
+end
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
