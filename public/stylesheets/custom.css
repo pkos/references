@@ -22,7 +22,7 @@ body {
   font-size: 120%;
   padding: 20px;
   background: #6cf;
-  text-align: center;
+/*  text-align: center; */
   border-style:solid;
   border-width:5px;
 }
@@ -180,3 +180,12 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
