@@ -1,0 +1,14 @@
+<tr>
+  <td class="reference">
+    <span class="reference"><%= h reference.abstract %></span>
+    <span class="timestamp">
+      Posted <%= time_ago_in_words(reference.created_at) %> ago.
+    </span>
+  </td>
+  <% if current_user?(reference.user) %>
+  <td>
+    <%= link_to "delete", reference, :method => :delete,
+                                     :confirm => "You sure?" %>
+  </td>
+  <% end %>
+</tr>

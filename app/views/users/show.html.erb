@@ -5,10 +5,17 @@
         <%= gravatar_for @user %>
         <%= h @user.name %>
       </h2>
+      <% unless @user.references.empty? %>
+        <table class="references">
+          <%= render @references %>
+        </table>
+        <%= will_paginate @references %>
+      <% end %>
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= h @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
+	  <strong>References</strong> <%= @user.references.count %>
     </td>
   </tr>
 </table>

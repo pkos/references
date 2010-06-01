@@ -9,3 +9,9 @@ end
 Factory.sequence :email do |n|
   "person-#{n}@example.com"
 end
+
+Factory.define :reference do |reference|
+  reference.abstract "Foo bar"
+  reference.association :user
+end
+

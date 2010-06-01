@@ -1,8 +1,22 @@
-<h1>| Reference Stacker |</h1>
+<% if signed_in? %>
+  <table class="front">
+    <tr>
+      <td class="main">
+        <h2 class="reference">Which PMID?</h2>
+        <%= render 'pages/reference_form' %>
+        <%= render 'pages/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'pages/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1>| Reference Stacker |</h1>
 
-<p>
-  An application to easily query, import, save, manage and export multiple PubMed entries.
-</p>
+  <p>
+    An application to easily query, import, save, manage and export multiple PubMed entries.
+  </p>
 
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
-
+  <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %>

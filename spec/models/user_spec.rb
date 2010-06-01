@@ -181,5 +181,48 @@ describe User do
     end
   end
   
+  describe "reference associations" do
+
+    before(:each) do
+      @user = User.create(@attr)
+      @mp1 = Factory(:reference, :user => @user, :created_at => 1.day.ago)
+      @mp2 = Factory(:reference, :user => @user, :created_at => 1.hour.ago)
+    end
+
+    it "should have a references attribute" do
+      @user.should respond_to(:references)
+    end
+
+    it "should have the right references in the right order" do
+      @user.references.should == [@mp2, @mp1]
+    end
+    
+    it "should destroy associated references" do
+      @user.destroy
+      [@mp1, @mp2].each do |reference|
+        Reference.find_by_id(reference.id).should be_nil
+      end
+    end
+
+    describe "status feed" do
+
+      it "should have a feed" do
+        @user.should respond_to(:feed)
+      end
+
+      it "should include the user's references" do
+        @user.feed.include?(@mp1).should be_true
+        @user.feed.include?(@mp2).should be_true
+      end
+
+      it "should not include a different user's references" do
+        mp3 = Factory(:reference,
+                      :user => Factory(:user, :email => Factory.next(:email)))
+        @user.feed.include?(mp3).should be_false
+      end
+    end
+    
+  end
+  
 end
 
