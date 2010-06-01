@@ -13,6 +13,8 @@ body {
 #header img {
   padding: 1em;
   background: #fff;
+  width: 25%;
+  height: 25%;
 }
 
 #content {
@@ -136,6 +138,7 @@ td.sidebar {
 
 div.field, div.actions {
   margin-bottom: 10px;
+
 }
 
 .fieldWithErrors {

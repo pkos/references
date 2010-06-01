@@ -42,6 +42,11 @@ describe UsersController do
       get :new
       response.should have_tag("title", /Sign up/)
     end
+    
+    it "should have a name field" do
+      get :new
+      response.should have_tag("input[name=?][type=?]", "user[name]", "text")
+    end
   end
   
   describe "POST 'create'" do
@@ -78,6 +83,11 @@ describe UsersController do
       @user.should_receive(:save).and_return(true)
     end
 
+    it "should sign the user in" do
+      post :create, :user => @attr
+      controller.should be_signed_in
+    end
+
     it "should redirect to the user show page" do
       post :create, :user => @attr
       response.should redirect_to(user_path(@user))
@@ -85,7 +95,7 @@ describe UsersController do
     
     it "should have a welcome message" do
       post :create, :user => @attr
-      flash[:success].should =~ /welcome to references stacker/i
+      flash[:success].should =~ /welcome to reference stacker/i
     end 
   end
 

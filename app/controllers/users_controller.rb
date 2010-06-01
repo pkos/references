@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:success] = "Welcome to References Stacker!"
+      sign_in @user
+      flash[:success] = "Welcome to Reference Stacker!"
       redirect_to @user
     else
       @title = "Sign up"
