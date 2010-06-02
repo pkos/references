@@ -4,7 +4,7 @@ class Reference < ActiveRecord::Base
   belongs_to :user
   
   validates_presence_of :abstract, :user_id
-  validates_length_of   :abstract, :maximum => 140
+  validates_length_of   :abstract, :maximum => 500
   
   default_scope :order => 'created_at DESC'
   

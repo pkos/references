@@ -3,12 +3,13 @@
     <%= link_to gravatar_for(feed_item.user), feed_item.user %>
   </td>
   <td class="reference">
+    <span class="reference"><%= h feed_item.abstract %></span>
+    <br />  
+    <span class="timestamp">
+      Posted <%= time_ago_in_words(feed_item.created_at) %> ago by
+    </span>
     <span class="user">
       <%= link_to h(feed_item.user.name), feed_item.user %>
-    </span>
-    <span class="reference"><%= h feed_item.abstract %></span>
-    <span class="timestamp">
-      Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
   </td>
   <% if current_user?(feed_item.user) %>
