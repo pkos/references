@@ -22388,3 +22388,3191 @@ Completed in 192ms (View: 181, DB: 0) | 200 OK [http://localhost/]
   [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
   [4;35;1mReference Create (0.3ms)[0m   [0mINSERT INTO `references` (`created_at`, `title`, `journal`, `updated_at`, `abstract`, `pmid`, `user_id`, `authors`) VALUES('2010-06-02 05:04:24', NULL, NULL, '2010-06-02 05:04:24', 'Quos nostrum et nam distinctio molestiae recusandae.', NULL, 6, NULL)[0m
   [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:06:13) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 30ms (View: 20, DB: 0) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:06:15) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-06-02 00:06:17) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (2.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-06-02 00:06:18) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 30ms (View: 20, DB: 1) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:06:23) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 00:06:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 41ms (View: 31, DB: 2) | 200 OK [http://localhost/signin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 00:06:37) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"peter_kos@hms.harvard.edu"}, "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'peter_kos@hms.harvard.edu') LIMIT 1[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-02 05:06:37', `remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 417ms (DB: 4) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:06:38) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523') LIMIT 1[0m
+Rendered references/_reference (20.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (13.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (14.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (13.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 470ms (View: 406, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:06:49) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523') LIMIT 1[0m
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.3ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (7.9ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (30.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+Rendered pages/_feed (479.3ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (6.9ms)
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (11.3ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 600ms (View: 539, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:06:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523') LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.8ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.8ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (111.9ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.8ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.2ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 517ms (View: 473, DB: 8) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:06:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (1.0ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523') LIMIT 1[0m
+Rendered references/_reference (23.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 444ms (View: 378, DB: 8) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-02 00:06:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '9c8bd2c1b14a58cf74b7fbcd7161ac7de3a900f63909a83d1bed48e1c43e1523') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 87ms (View: 46, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-02 00:06:54) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:06:55) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 00:06:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 27ms (View: 16, DB: 1) | 200 OK [http://localhost/signin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 00:07:11) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"peter_kos@hms.harvard.edu"}, "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+  [4;35;1mUser Columns (66.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'peter_kos@hms.harvard.edu') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 123ms (View: 17, DB: 67) | 200 OK [http://localhost/sessions]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-02 00:07:27) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"peter_kos@hms.harvard.edu"}, "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+  [4;35;1mUser Columns (210.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'peter_kos@hms.harvard.edu') LIMIT 1[0m
+  [4;35;1mUser Update (1.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-02 05:07:27', `remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 263ms (DB: 212) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:07:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (1.0ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;35;1mReference Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (24.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 437ms (View: 372, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#destroy (for 127.0.0.1 at 2010-06-02 00:07:33) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "id"=>"1", "controller"=>"references"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.`id` = 1) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mReference Destroy (0.3ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 69ms (DB: 9) | 302 Found [http://localhost/references/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:07:33) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (32.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (107.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+Rendered pages/_feed (561.4ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.8ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.7ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 649ms (View: 591, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:07:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (25.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 442ms (View: 375, DB: 8) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#destroy (for 127.0.0.1 at 2010-06-02 00:07:41) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "id"=>"2", "controller"=>"references"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.2ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.`id` = 2) ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReference Destroy (0.3ms)[0m   [0mDELETE FROM `references` WHERE `id` = 2[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 71ms (DB: 9) | 302 Found [http://localhost/references/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:07:41) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.2ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (18.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+Rendered pages/_feed (471.0ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.7ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 672ms (View: 500, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:07:43) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (28.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+Rendered pages/_feed (449.7ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.8ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 537ms (View: 479, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:07:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (14.6ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.7ms)
+Rendered users/_user (10.7ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.2ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 394ms (View: 351, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:07:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mReference Load (1.2ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 2) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (14.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 187ms (View: 119, DB: 9) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:07:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 2) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 181ms (View: 118, DB: 6) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:07:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (66.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.3ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (11.3ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.2ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 461ms (View: 352, DB: 69) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:08:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 2) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (15.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 182ms (View: 117, DB: 7) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:08:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (14.6ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (12.1ms)
+Rendered users/_user (10.7ms)
+Rendered users/_user (11.5ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.5ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (115.6ms)
+Rendered users/_user (10.3ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 504ms (View: 460, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2010-06-02 00:08:08) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "id"=>"6", "controller"=>"users"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReference Load (1.2ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 6) ORDER BY created_at DESC[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Destroy (0.3ms)[0m   [0mDELETE FROM `references` WHERE `id` = 272[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 273[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 274[0m
+  [4;36;1mReference Destroy (0.3ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 275[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 276[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 277[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 278[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 279[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 280[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 281[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 282[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 283[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 284[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 285[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 286[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 287[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 288[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 289[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 290[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 291[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 292[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 293[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 294[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 295[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 296[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 297[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 298[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 299[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 300[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 256[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 257[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 258[0m
+  [4;35;1mReference Destroy (0.1ms)[0m   [0mDELETE FROM `references` WHERE `id` = 259[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 260[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 261[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 262[0m
+  [4;35;1mReference Destroy (0.1ms)[0m   [0mDELETE FROM `references` WHERE `id` = 263[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 264[0m
+  [4;35;1mReference Destroy (0.1ms)[0m   [0mDELETE FROM `references` WHERE `id` = 265[0m
+  [4;36;1mReference Destroy (0.9ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 266[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 267[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 268[0m
+  [4;35;1mReference Destroy (0.1ms)[0m   [0mDELETE FROM `references` WHERE `id` = 269[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 270[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 271[0m
+  [4;36;1mReference Destroy (0.1ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 251[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 252[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 253[0m
+  [4;35;1mReference Destroy (0.2ms)[0m   [0mDELETE FROM `references` WHERE `id` = 254[0m
+  [4;36;1mReference Destroy (0.2ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 255[0m
+  [4;35;1mUser Destroy (0.2ms)[0m   [0mDELETE FROM `users` WHERE `id` = 6[0m
+  [4;36;1mSQL (20.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users
+Completed in 154ms (DB: 37) | 302 Found [http://localhost/users/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:08:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (14.2ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (11.3ms)
+Rendered users/_user (11.6ms)
+Rendered users/_user (12.7ms)
+Rendered users/_user (12.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.9ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 395ms (View: 348, DB: 5) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:08:12) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.7ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (113.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+Rendered pages/_feed (560.9ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.7ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 654ms (View: 591, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:08:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (14.3ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (10.5ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 390ms (View: 346, DB: 4) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:08:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mReference Load (1.0ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 2) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (3.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 2) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 289ms (View: 223, DB: 8) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:08:22) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (67.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.9ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+Rendered pages/_feed (452.6ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.7ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 616ms (View: 483, DB: 73) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:08:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (24.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (118.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 548ms (View: 484, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#destroy (for 127.0.0.1 at 2010-06-02 00:08:28) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "id"=>"3", "controller"=>"references"}
+  [4;35;1mUser Columns (66.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.3ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.`id` = 3) ORDER BY created_at DESC[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReference Destroy (0.3ms)[0m   [0mDELETE FROM `references` WHERE `id` = 3[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 132ms (DB: 71) | 302 Found [http://localhost/references/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:08:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (2.4ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.6ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.5ms)
+Rendered pages/_feed (463.3ms)
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.3ms)
+Rendered layouts/_stylesheets (2.1ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 563ms (View: 497, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-02 00:08:30) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 77ms (View: 36, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:08:40) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+  [4;35;1mUser Columns (72.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered layouts/_header (117.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 135ms (View: 51, DB: 73) | 200 OK [http://localhost/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-06-02 00:08:42) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.8ms)
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered layouts/_header (42.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 61ms (View: 48, DB: 3) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-06-02 00:08:44) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.8ms)
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered layouts/_header (43.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 61ms (View: 48, DB: 3) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:08:46) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.1ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.8ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+Rendered pages/_feed (456.5ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.8ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 547ms (View: 487, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-02 00:09:18) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"references", "retrieve"=>{"PMID"=>"20509982"}}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mReference Create (0.3ms)[0m   [0;1mINSERT INTO `references` (`created_at`, `title`, `journal`, `updated_at`, `abstract`, `pmid`, `user_id`, `authors`) VALUES('2010-06-02 05:09:19', NULL, NULL, '2010-06-02 05:09:19', 'Mason, P. Important drug-nutrient interactions. Proc Nutr Soc , 1-7 (2010).', NULL, 1, NULL)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 1023ms (DB: 6) | 302 Found [http://localhost/references]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:09:19) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (30.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (15.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+Rendered pages/_feed (457.5ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.7ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 548ms (View: 488, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:09:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (71.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (24.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (105.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 606ms (View: 466, DB: 77) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:09:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (14.3ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.6ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.2ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.5ms)
+Rendered users/_user (9.9ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (10.1ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (10.4ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.0ms)
+Rendered users/_user (10.3ms)
+Rendered users/_user (9.8ms)
+Rendered users/_user (9.7ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 389ms (View: 345, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:09:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (23.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (120.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 552ms (View: 484, DB: 8) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-02 00:09:41) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 78ms (View: 36, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:09:46) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.8ms)
+  [4;36;1mUser Columns (70.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered layouts/_header (111.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 130ms (View: 48, DB: 72) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:09:59) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (221.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+Rendered pages/_feed (450.8ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 759ms (View: 481, DB: 226) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:10:07) [GET]
+  Parameters: {"action"=>"home", "page"=>"2", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.3ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+Rendered pages/_feed (279.6ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.1ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 472ms (View: 311, DB: 8) | 200 OK [http://localhost/?page=2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:10:13) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (71.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+  [4;36;1mReference Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.7ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.8ms)
+Rendered pages/_feed (457.0ms)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 620ms (View: 487, DB: 77) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:10:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (237.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '45f0a531f1560baf54b5932b2ddc31971db41cfcce91138c41ebdc0982c9649c') LIMIT 1[0m
+Rendered references/_reference (131.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (16.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (13.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (11.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (10.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 796ms (View: 492, DB: 242) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-02 00:10:29) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:10:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-02 00:10:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (2.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 73ms (View: 36, DB: 2) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-02 00:10:47) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"users", "user"=>{"name"=>"exa@exa.com", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"exa@exa.com"}}
+  [4;36;1mUser Columns (249.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'exa@exa.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 538ms (View: 38, DB: 251) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-02 00:10:56) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"users", "user"=>{"name"=>"exa@exa.com", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"exa@exa.com"}}
+  [4;36;1mUser Columns (248.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'exa@exa.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `admin`, `remember_token`, `email`) VALUES('exa@exa.com', 'ab0e30e61a859ff868cc19e979cddfffd36abd9767cf1ecb6de74c561cb17be4', '23980bc979eabd7c58f329d1db8568c5e30d270a8b72eb78d3389c05e781d269', '2010-06-02 05:10:57', '2010-06-02 05:10:57', 0, NULL, 'exa@exa.com')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Update (21.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-02 05:10:57', `remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620' WHERE `id` = 101[0m
+Redirected to http://localhost:3000/users/101
+Completed in 329ms (DB: 272) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:10:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"101", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 101) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered layouts/_stylesheets (2.1ms)
+Rendered layouts/_header (12.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 87ms (View: 28, DB: 6) | 200 OK [http://localhost/users/101]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:11:03) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (97.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.4ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 101) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.9ms)
+Rendered pages/_feed (0.3ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+Rendered pages/_user_info (8.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 188ms (View: 36, DB: 101) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-02 00:11:09) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"references", "retrieve"=>{"PMID"=>"20509982"}}
+  [4;36;1mUser Columns (67.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mReference Create (0.4ms)[0m   [0;1mINSERT INTO `references` (`created_at`, `title`, `journal`, `updated_at`, `abstract`, `pmid`, `user_id`, `authors`) VALUES('2010-06-02 05:11:09', NULL, NULL, '2010-06-02 05:11:09', 'Mason, P. Important drug-nutrient interactions. Proc Nutr Soc , 1-7 (2010).', NULL, 101, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 755ms (DB: 71) | 302 Found [http://localhost/references]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:11:09) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 101) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+Rendered pages/_feed_item (29.1ms)
+Rendered pages/_feed (30.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+Rendered pages/_user_info (4.4ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 119ms (View: 60, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:11:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"101", "controller"=>"users"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+  [4;36;1mReference Load (0.7ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 101) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered references/_reference (24.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 112ms (View: 50, DB: 8) | 200 OK [http://localhost/users/101]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#destroy (for 127.0.0.1 at 2010-06-02 00:11:19) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "id"=>"302", "controller"=>"references"}
+  [4;36;1mUser Columns (66.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;36;1mReference Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.3ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.`id` = 302) ORDER BY created_at DESC[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mReference Destroy (0.3ms)[0m   [0;1mDELETE FROM `references` WHERE `id` = 302[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 125ms (DB: 70) | 302 Found [http://localhost/references/302]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:11:19) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.4ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 101) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.9ms)
+Rendered pages/_feed (0.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+Rendered pages/_user_info (8.2ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 101ms (View: 34, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-02 00:11:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (5.9ms)
+Rendered users/_user (1.9ms)
+Rendered users/_user (1.9ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.8ms)
+Rendered users/_user (1.9ms)
+Rendered users/_user (2.1ms)
+Rendered users/_user (2.2ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.3ms)
+Rendered users/_user (2.2ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.0ms)
+Rendered users/_user (2.4ms)
+Rendered users/_user (2.5ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 148ms (View: 106, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:11:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.1ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered references/_reference (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 183ms (View: 117, DB: 8) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:11:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "page"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (67.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (1.0ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 30, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered references/_reference (14.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (2.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 215ms (View: 88, DB: 72) | 200 OK [http://localhost/users/1?page=2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-02 00:11:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"101", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 101) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (12.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 89ms (View: 27, DB: 6) | 200 OK [http://localhost/users/101]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-02 00:11:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"101", "controller"=>"users"}
+  [4;35;1mUser Columns (35.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 101) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 112ms (View: 36, DB: 37) | 200 OK [http://localhost/users/101/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:11:35) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.6ms)
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered layouts/_header (42.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 60ms (View: 47, DB: 4) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-06-02 00:12:25) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+  [4;36;1mUser Columns (246.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered layouts/_header (290.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 408ms (View: 150, DB: 248) | 200 OK [http://localhost/contact]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:12:35) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+Rendered layouts/_header (42.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 61ms (View: 47, DB: 4) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:12:37) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'a30986ced062de0a501f4fb3ca44db8152a65dbc399d5998444e58fdfb7c6620') LIMIT 1[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.4ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 101) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.8ms)
+Rendered pages/_feed (0.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 101) [0m
+Rendered pages/_user_info (8.1ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 91ms (View: 35, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-02 00:12:39) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"Ahd+pEkb8D/dqhITz6/IKVlpXd+VuPCUUOfxDFj2AGs=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:12:40) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:12:41) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:15:04) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 30ms (View: 19, DB: 0) | 200 OK [http://localhost/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-06-02 00:15:32) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (3.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-06-02 00:15:34) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:15:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (93.6ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 114ms (View: 103, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-02 00:15:40) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-02 00:15:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-02 00:15:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (74.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 133ms (View: 25, DB: 75) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-02 00:15:50) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/]
