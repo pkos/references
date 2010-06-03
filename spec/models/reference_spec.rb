@@ -39,12 +39,12 @@ describe Reference do
       Reference.new(@attr).should_not be_valid
     end
 
-    it "should require nonblank abstracr" do
+    it "should require nonblank abstract" do
       @user.references.build(:abstract => "  ").should_not be_valid
     end
 
-    it "should reject long abstracr" do
-      @user.references.build(:abstract => "a" * 141).should_not be_valid
+    it "should reject long abstract" do
+      @user.references.build(:abstract => "a" * 501).should_not be_valid
     end
   end
   

@@ -15,10 +15,6 @@
     <td class="sidebar round">
       <strong>Name:</strong> <%= h @user.name %>
 	  <br/><strong>References:</strong> <%= @user.references.count %>
-	  <% if current_user.admin? %>
-	  <br/><strong>Admin:</strong> <%= @user.admin %>
-	  <br/><strong>URL:</strong>  <%= link_to user_path(@user), @user %>
-	  <% end %>
     </td>
   </tr>
 </table>
