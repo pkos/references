@@ -17,7 +17,7 @@ class ReferencesController < ApplicationController
         render 'pages/home'
     end
   end
- 
+
   def destroy
     @reference.destroy
     redirect_back_or root_path

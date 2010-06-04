@@ -1,12 +1,28 @@
 class UsersController < ApplicationController
-  before_filter :authenticate, :only => [:index, :edit, :update, :destroy]
-  before_filter :correct_user, :only => [:edit, :update]
+  before_filter :authenticate, :only => [:index, :edit, :update, :destroy, :export]
+  before_filter :correct_user, :only => [:edit, :update, :export]
   before_filter :admin_user,   :only => :destroy
     
   def index
     @title = "All users"
     @users = User.paginate(:page => params[:page])
   end
+    
+#  def export
+#    headers['Content-Type'] = "application/vnd.word"
+#    headers['Content-Disposition'] = 'attachment; filename="references.doc"'
+#    headers['Cache-Control'] = ''
+#    @reference = Reference.find(:all)
+#  end
+ 
+def export
+  response.headers['Content-Type'] = "application/vnd.word"
+  response.headers['Content-Disposition'] = 'attachment; filename="references.doc"'
+  response.headers['Cache-Control'] = ''
+  @user = User.find(params[:id])
+  @references = @user.references.find(:all)
+  render 'export/export', :layout => false
+end
   
   def show
     @user = User.find(params[:id])
