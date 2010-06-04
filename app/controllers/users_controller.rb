@@ -21,6 +21,7 @@ def export
   response.headers['Cache-Control'] = ''
   @user = User.find(params[:id])
   @references = @user.references.find(:all)
+  @references.sort! { |a,b| a.abstract.downcase <=> b.abstract.downcase }
   render 'export/export', :layout => false
 end
   
