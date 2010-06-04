@@ -3,7 +3,7 @@ class CreateReferences < ActiveRecord::Migration
     create_table :references do |t|
       t.string :title
       t.string :authors
-      t.string :abstract
+      t.text :abstract
       t.string :journal
       t.integer :pmid
       t.integer :user_id

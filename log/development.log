@@ -33081,3 +33081,312 @@ Rendered layouts/_stylesheets (1.7ms)
 Rendered layouts/_header (13.0ms)
 Rendered layouts/_footer (0.7ms)
 Completed in 100ms (View: 41, DB: 6) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 20:49:13) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (5.9ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (65.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+Rendered pages/_feed (202.0ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 292ms (View: 233, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-03 20:49:17) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"HpY76ZG6SqIYKYgR13Dfe/SgXVLpeVdg0KQhO5uHMTk=", "controller"=>"references", "retrieve"=>{"PMID"=>"18305455"}}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReference Create (0.4ms)[0m   [0mINSERT INTO `references` (`created_at`, `title`, `journal`, `updated_at`, `abstract`, `pmid`, `user_id`, `authors`) VALUES('2010-06-04 01:49:19', NULL, NULL, '2010-06-04 01:49:19', 'Gage, B. F., Eby, C., Johnson, J. A., Deych, E., Rieder, M. J., Ridker, P. M., Milligan, P. E., Grice, G., Lenzini, P., Rettie, A. E., Aquilante, C. L., Grosso, L., Marsh, S., Langaee, T., Farnett, L. E., Voora, D., Veenstra, D. L., Glynn, R. J., Barrett, A. & McLeod, H. L. Use of pharmacogenetic and clinical factors to predict the therapeutic dose of warfarin. Clin Pharmacol Ther 84, 326-331 (2008).', NULL, 1, NULL)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 2197ms (DB: 7) | 302 Found [http://localhost/references]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 20:49:19) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.0ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (29.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (13.9ms)
+Rendered pages/_feed (89.3ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.7ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 178ms (View: 121, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 20:52:47) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (264.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;35;1mReference Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (1.2ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (7.1ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (30.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+Rendered pages/_feed (91.7ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (2.1ms)
+Rendered layouts/_header (13.4ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 449ms (View: 126, DB: 270) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-03 21:10:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (238.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (6.1ms)
+Rendered users/_user (1.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.8ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 309ms (View: 31, DB: 240) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:16:27) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (9.0ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (190.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (14.4ms)
+Rendered pages/_feed (260.8ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (6.9ms)
+Rendered layouts/_stylesheets (2.9ms)
+Rendered layouts/_header (14.4ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 485ms (View: 385, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (201.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (281.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100530042823)
+  [4;35;1mSQL (69.3ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100530042823')[0m
+Migrating to CreateReferences (20100530044624)
+  [4;35;1mSQL (45.7ms)[0m   [0mCREATE TABLE `references` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `authors` varchar(255), `abstract` text, `journal` varchar(255), `pmid` int(11), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (30.2ms)[0m   [0;1mCREATE INDEX `index_references_on_user_id` ON `references` (`user_id`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530044624')[0m
+Migrating to AddEmailUniquenessIndex (20100530110120)
+  [4;36;1mSQL (55.2ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530110120')[0m
+Migrating to AddPasswordToUsers (20100530114216)
+  [4;36;1mSQL (200.4ms)[0m   [0;1mALTER TABLE `users` ADD `encrypted_password` varchar(255)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530114216')[0m
+Migrating to AddSaltToUsers (20100530143553)
+  [4;36;1mSQL (58.9ms)[0m   [0;1mALTER TABLE `users` ADD `salt` varchar(255)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100530143553')[0m
+Migrating to AddRememberTokenToUsers (20100601005155)
+  [4;36;1mSQL (47.6ms)[0m   [0;1mALTER TABLE `users` ADD `remember_token` varchar(255)[0m
+  [4;35;1mSQL (25.9ms)[0m   [0mCREATE INDEX `index_users_on_remember_token` ON `users` (`remember_token`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100601005155')[0m
+Migrating to AddAdminToUsers (20100601032456)
+  [4;35;1mSQL (58.3ms)[0m   [0mALTER TABLE `users` ADD `admin` tinyint(1) DEFAULT 0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100601032456')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `references`[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:37:53) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+Rendered layouts/_stylesheets (2.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+Rendered layouts/_header (7.0ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 156ms (View: 116, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 21:37:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.7ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '53d8523d9fde503cffd4eb8510577b2a0ca5fa6c817af5d8ad30e5f07d2565c2') LIMIT 1[0m
+Rendered layouts/_header (5.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 86ms (View: 49, DB: 3) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 21:38:20) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"HpY76ZG6SqIYKYgR13Dfe/SgXVLpeVdg0KQhO5uHMTk=", "controller"=>"users", "user"=>{"name"=>"Peter Kos", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"peter_kos@hms.harvard.edu"}}
+  [4;36;1mUser Columns (231.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'peter_kos@hms.harvard.edu') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `encrypted_password`, `salt`, `created_at`, `updated_at`, `admin`, `remember_token`, `email`) VALUES('Peter Kos', 'e87f7ad1f1a702d5117f2214b8d19a9f7953b2ee34d87068790f0c683f866c4a', 'c29920e95c30cb4f79428906bd6834b017f775915da5ead836a15f58d6662d93', '2010-06-04 02:38:21', '2010-06-04 02:38:21', 0, NULL, 'peter_kos@hms.harvard.edu')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Update (0.8ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-04 02:38:21', `remember_token` = 'f8027480f1ff7acaa53e5a056f43dc0594ef5c40a60188e97060345bfcbaeffd' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 787ms (DB: 234) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 21:38:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'f8027480f1ff7acaa53e5a056f43dc0594ef5c40a60188e97060345bfcbaeffd') LIMIT 1[0m
+Rendered layouts/_header (88.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 173ms (View: 112, DB: 6) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:38:25) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'f8027480f1ff7acaa53e5a056f43dc0594ef5c40a60188e97060345bfcbaeffd') LIMIT 1[0m
+  [4;35;1mReference Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.4ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (8.4ms)
+Rendered pages/_feed (1.5ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (9.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 124ms (View: 67, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-03 21:38:39) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"HpY76ZG6SqIYKYgR13Dfe/SgXVLpeVdg0KQhO5uHMTk=", "controller"=>"references", "retrieve"=>{"PMID"=>"18305455"}}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'f8027480f1ff7acaa53e5a056f43dc0594ef5c40a60188e97060345bfcbaeffd') LIMIT 1[0m
+  [4;36;1mReference Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mReference Create (0.4ms)[0m   [0;1mINSERT INTO `references` (`created_at`, `title`, `journal`, `updated_at`, `abstract`, `pmid`, `user_id`, `authors`) VALUES('2010-06-04 02:38:41', NULL, NULL, '2010-06-04 02:38:41', 'Gage, B. F., Eby, C., Johnson, J. A., Deych, E., Rieder, M. J., Ridker, P. M., Milligan, P. E., Grice, G., Lenzini, P., Rettie, A. E., Aquilante, C. L., Grosso, L., Marsh, S., Langaee, T., Farnett, L. E., Voora, D., Veenstra, D. L., Glynn, R. J., Barrett, A. & McLeod, H. L. Use of pharmacogenetic and clinical factors to predict the therapeutic dose of warfarin. Clin Pharmacol Ther 84, 326-331 (2008).', NULL, 1, NULL)[0m
+  [4;35;1mSQL (35.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 1594ms (DB: 41) | 302 Found [http://localhost/references]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:38:41) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'f8027480f1ff7acaa53e5a056f43dc0594ef5c40a60188e97060345bfcbaeffd') LIMIT 1[0m
+  [4;36;1mReference Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (31.5ms)
+Rendered pages/_feed (41.2ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 132ms (View: 73, DB: 6) | 200 OK [http://localhost/]

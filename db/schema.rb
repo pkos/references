@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20100601032456) do
   create_table "references", :force => true do |t|
     t.string   "title"
     t.string   "authors"
-    t.string   "abstract"
+    t.text     "abstract"
     t.string   "journal"
     t.integer  "pmid"
     t.integer  "user_id"

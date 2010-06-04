@@ -1,0 +1,39 @@
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:12:40) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
+  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
+  app/helpers/sessions_helper.rb:15:in `current_user'
+  app/helpers/sessions_helper.rb:24:in `signed_in?'
+  app/controllers/pages_controller.rb:5:in `home'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:12:54) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
+  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
+  app/helpers/sessions_helper.rb:15:in `current_user'
+  app/helpers/sessions_helper.rb:24:in `signed_in?'
+  app/controllers/pages_controller.rb:5:in `home'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:17:06) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
+  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
+  app/helpers/sessions_helper.rb:15:in `current_user'
+  app/helpers/sessions_helper.rb:24:in `signed_in?'
+  app/controllers/pages_controller.rb:5:in `home'
+
+Rendering rescues/layout (internal_server_error)
