@@ -44,7 +44,7 @@ describe Reference do
     end
 
     it "should reject long abstract" do
-      @user.references.build(:abstract => "a" * 501).should_not be_valid
+      @user.references.build(:abstract => "a" * 1001).should_not be_valid
     end
   end
   

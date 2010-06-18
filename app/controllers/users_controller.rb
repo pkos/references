@@ -7,23 +7,16 @@ class UsersController < ApplicationController
     @title = "All users"
     @users = User.paginate(:page => params[:page])
   end
-    
-#  def export
-#    headers['Content-Type'] = "application/vnd.word"
-#    headers['Content-Disposition'] = 'attachment; filename="references.doc"'
-#    headers['Cache-Control'] = ''
-#    @reference = Reference.find(:all)
-#  end
  
-def export
-  response.headers['Content-Type'] = "application/vnd.word"
-  response.headers['Content-Disposition'] = 'attachment; filename="references.doc"'
-  response.headers['Cache-Control'] = ''
-  @user = User.find(params[:id])
-  @references = @user.references.find(:all)
-  @references.sort! { |a,b| a.abstract.downcase <=> b.abstract.downcase }
-  render 'export/export', :layout => false
-end
+  def export
+    response.headers['Content-Type'] = "application/vnd.word"
+    response.headers['Content-Disposition'] = 'attachment; filename="references.doc"'
+    response.headers['Cache-Control'] = ''
+    @user = User.find(params[:id])
+    @references = @user.references.find(:all)
+    @references.sort! { |a,b| a.abstract.downcase <=> b.abstract.downcase }
+    render 'export/export', :layout => false
+  end
   
   def show
     @user = User.find(params[:id])
