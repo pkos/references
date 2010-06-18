@@ -1,7 +1,7 @@
 <% form_for :retrieve, :url=>{:controller=>"references", :action=>"create"}, :html => {:multipart => true } do |f| -%>
   <%= f.error_messages %>
   <div class="PMIDS">
-    <%= f.text_field :PMID %>
+    <% f.label :id, 'PMID: ' %><%= f.text_field :id %>
   </div>
   <div class="actions">
     <%= f.submit "Submit" %>
