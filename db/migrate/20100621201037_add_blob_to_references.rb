@@ -1,6 +1,6 @@
 class AddBlobToReferences < ActiveRecord::Migration
   def self.up
-    add_column :references, :refblob, :blob
+    add_column :references, :refblob, :bytea
   end
 
   def self.down
