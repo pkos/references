@@ -5,7 +5,7 @@ one:
   authors: MyString
   abstract: MyString
   journal: MyString
-  pmid: 1
+  refblob: MyString
   user_id: 1
 
 two:
@@ -13,5 +13,5 @@ two:
   authors: MyString
   abstract: MyString
   journal: MyString
-  pmid: 1
+  refblob: MyString
   user_id: 1

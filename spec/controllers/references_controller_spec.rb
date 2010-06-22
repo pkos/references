@@ -20,7 +20,7 @@ describe ReferencesController do
 
     before(:each) do
       @user = test_sign_in(Factory(:user))
-      @attr = { :abstract => "Lorem ipsum" }
+      @attr = { :refblob => "Lorem ipsum" }
       @reference = Factory(:reference, @attr.merge(:user => @user))
 
       @user.references.stub!(:build).and_return(@reference)

@@ -1,39 +1,98 @@
+# Logfile created on Tue Jun 22 01:37:41 -0500 2010
 
-
-Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:12:40) [GET]
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 01:37:51) [GET]
   Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 106ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-22 01:37:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
 
 ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
-  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
-  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
-  app/helpers/sessions_helper.rb:15:in `current_user'
-  app/helpers/sessions_helper.rb:24:in `signed_in?'
-  app/controllers/pages_controller.rb:5:in `home'
+  app/controllers/users_controller.rb:28:in `new'
+  app/controllers/users_controller.rb:28:in `new'
 
 Rendering rescues/layout (internal_server_error)
 
 
-Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:12:54) [GET]
+Processing UsersController#new (for 127.0.0.1 at 2010-06-22 01:38:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 106ms (View: 31, DB: 72) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-22 01:39:00) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-22 01:39:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-22 01:39:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-22 01:39:27) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"users", "user"=>{"name"=>"Test User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "style"=>"nature", "email"=>"test@test.com"}}
+Redirected to http://localhost:3000/users/1
+Completed in 490ms (DB: 244) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 01:39:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 43ms (View: 33, DB: 5) | 200 OK [http://localhost/users/1]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 01:39:30) [GET]
   Parameters: {"action"=>"home", "controller"=>"pages"}
-
-ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
-  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
-  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
-  app/helpers/sessions_helper.rb:15:in `current_user'
-  app/helpers/sessions_helper.rb:24:in `signed_in?'
-  app/controllers/pages_controller.rb:5:in `home'
-
-Rendering rescues/layout (internal_server_error)
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/]
 
 
-Processing PagesController#home (for 127.0.0.1 at 2010-06-03 21:17:06) [GET]
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-22 01:39:33) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"references", "retrieve"=>{"id"=>""}}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/references]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 01:39:33) [GET]
   Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 32ms (View: 27, DB: 1) | 200 OK [http://localhost/]
 
-ActiveRecord::StatementInvalid (Mysql::Error: Table 'references_production.users' doesn't exist: SHOW FIELDS FROM `users`):
-  /usr/local/lib/ruby/gems/1.8/gems/will_paginate-2.3.12/lib/will_paginate/finder.rb:170:in `method_missing'
-  app/helpers/sessions_helper.rb:20:in `user_from_remember_token'
-  app/helpers/sessions_helper.rb:15:in `current_user'
-  app/helpers/sessions_helper.rb:24:in `signed_in?'
-  app/controllers/pages_controller.rb:5:in `home'
 
-Rendering rescues/layout (internal_server_error)
+Processing ReferencesController#create (for 127.0.0.1 at 2010-06-22 01:39:45) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"references", "retrieve"=>{"id"=>"20556559"}}
+Redirected to http://localhost:3000/
+Completed in 754ms (DB: 25) | 302 Found [http://localhost/references]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 01:39:46) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 54ms (View: 48, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 01:39:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/show
+Completed in 44ms (View: 37, DB: 2) | 200 OK [http://localhost/users/1]

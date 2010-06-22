@@ -4,6 +4,7 @@ Factory.define :user do |user|
   user.email                 "mhartl@example.com"
   user.password              "foobar"
   user.password_confirmation "foobar"
+  user.style                 "nature"
 end
 
 Factory.sequence :email do |n|
@@ -11,7 +12,7 @@ Factory.sequence :email do |n|
 end
 
 Factory.define :reference do |reference|
-  reference.abstract "Foo bar"
+  reference.refblob "Foo bar"
   reference.association :user
 end
 
