@@ -18,6 +18,13 @@
     <%= f.label :password_confirmation, "Confirmation" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+	<% styles = ['nil', 'endnote', 'bibitem', 'bibtex', 'rd',
+              'nature', 'science', 'genome_biol', 'genome_res',
+              'nar', 'current', 'trends', 'cell']-%>
+    <%= f.label :style, "Format Styles" %><br />
+    <%= f.select :style, styles, :selected => 'nature' %>
+  </div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>

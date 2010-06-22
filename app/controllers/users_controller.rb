@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     response.headers['Cache-Control'] = ''
     @user = User.find(params[:id])
     @references = @user.references.find(:all)
-    @references.sort! { |a,b| a.abstract.downcase <=> b.abstract.downcase }
+    @references.sort! { |a,b| a.refblob.downcase <=> b.refblob.downcase }
     render 'export/export', :layout => false
   end
   

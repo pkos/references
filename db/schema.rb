@@ -9,17 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100601032456) do
+ActiveRecord::Schema.define(:version => 20100622044320) do
 
   create_table "references", :force => true do |t|
-    t.string   "title"
-    t.string   "authors"
+    t.text     "authors"
+    t.text     "title"
+    t.text     "journal"
+    t.text     "volume"
+    t.text     "issue"
+    t.text     "pages"
+    t.text     "year"
+    t.text     "pubmed"
+    t.text     "medline"
     t.text     "abstract"
-    t.string   "journal"
-    t.integer  "pmid"
+    t.text     "url"
+    t.text     "mesh"
+    t.text     "affiliations"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.binary   "refblob"
+    t.text     "reftext"
   end
 
   add_index "references", ["user_id"], :name => "index_references_on_user_id"
@@ -33,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20100601032456) do
     t.string   "salt"
     t.string   "remember_token"
     t.boolean  "admin",              :default => false
+    t.string   "style"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

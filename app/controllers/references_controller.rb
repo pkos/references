@@ -12,10 +12,8 @@ class ReferencesController < ApplicationController
       redirect_to root_path
     else
       entry = Bio::PubMed.query(params[:retrieve][:id]) # searches PubMed and get entry
-      medline = Bio::MEDLINE.new(entry)     # creates Bio::MEDLINE object from entry text
-      reference = medline.reference
-      @attr = { :abstract => reference.nature }
-      @reference = Reference.new
+      medline = Bio::MEDLINE.new(entry)     # creates Bio::MEDLINE object from entry text     
+      @attr = { :refblob => entry }
       @reference = current_user.references.build(@attr) # converts into Bio::Reference object
       if @reference.save
         flash[:success] = "Reference created!"

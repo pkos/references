@@ -1,6 +1,8 @@
+<% medline = Bio::MEDLINE.new(reference.refblob)
+ref = medline.reference %>
 <tr>
   <td class="reference">
-    <span class="reference"><%= h reference.abstract %></span>
+    <span class="reference"><%= h ref.format(current_user.style) %></span>
     <br />
     <span class="timestamp">
       Posted <%= time_ago_in_words(reference.created_at) %> ago.
