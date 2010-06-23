@@ -14,6 +14,18 @@ module ApplicationHelper
   def logo
     logo = image_tag("logo.png", :alt => "Reference Stacker App", :class => "round")
   end
+ 
+  def bioruby
+    bioruby = image_tag("bioruby-gem.png", :alt => "Bioruby", :class => "round")
+  end 
+  
+  def rails
+    rails = image_tag("rails.png", :alt => "Ruby on Rails", :class => "round")
+  end
+  
+  def github
+    rails = image_tag("github.png", :alt => "Ruby on Rails", :class => "round")
+  end
   
   require "webrat"
 

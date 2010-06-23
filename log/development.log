@@ -68,3 +68,1856 @@ Rendered layouts/_stylesheets (1.9ms)
 Rendered layouts/_header (1.9ms)
 Rendered layouts/_footer (0.6ms)
 Completed in 103ms (View: 92, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 19:28:00) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+Rendered layouts/_stylesheets (2.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+Rendered layouts/_header (7.3ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 291ms (View: 226, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-22 19:28:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.8ms)
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'b10d902c23c4a740277ae156510f8871c26ac5b6011830b4fa87b7027801960d') LIMIT 1[0m
+Rendered layouts/_header (33.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 75ms (View: 61, DB: 4) | 200 OK [http://localhost/signin]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-22 19:28:17) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"test@test.com"}, "action"=>"create", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"sessions"}
+  [4;36;1mUser Columns (68.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mUser Update (36.8ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-23 00:28:18', `remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 574ms (DB: 106) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 19:28:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (237.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (13.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 368ms (View: 305, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-06-22 19:28:26) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.7ms)
+  [4;36;1mUser Columns (67.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+Rendered layouts/_header (110.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 138ms (View: 60, DB: 69) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 19:28:33) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (72.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (8.7ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (48.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.9ms)
+Rendered pages/_feed (76.2ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (6.4ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 351ms (View: 138, DB: 77) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 19:28:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mReference Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (29.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (13.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 133ms (View: 71, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:29:44) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (72.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `merge' for ["A"]:Array) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.select :style, styles, slabels, :selected => 'nature' %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (202.9ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:32:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 93ms (View: 48, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:32:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+ERROR: compiling _run_erb_app47views47users47edit46html46erb RAISED compile error
+/usr/local/src/references/app/views/users/edit.html.erb:22: odd number list for Hash
+;  styles = ['A'=> {'nil'}]
+                          ^
+Function body:           def _run_erb_app47views47users47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>Edit user</h2>\n\n"
+
+;  form_for(@user) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <div class=\"field\">\n    "
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :password ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :password_confirmation, "Confirmation" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n\t"
+
+
+;  styles = ['A'=> {'nil'}]
+@output_buffer.concat "\t, 'endnote', 'bibitem', 'bibtex', 'rd',\n              'nature', 'science', 'genome_biol', 'genome_res',\n              'nar', 'current', 'trends', 'cell']-%>\n    "
+
+
+; @output_buffer.concat(( f.label :style, "Format Styles" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.select :style, styles, :selected => 'nature' ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"actions\">\n    "
+
+
+; @output_buffer.concat(( f.submit "Update" ).to_s); @output_buffer.concat "\n  </div>\n"
+
+;  end ; @output_buffer.concat "\n\n<div>\n  "
+
+
+; @output_buffer.concat(( gravatar_for @user ).to_s); @output_buffer.concat "\n  <a href=\"http://gravatar.com/emails\">change</a>\n</div>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/local/src/references/app/views/users/edit.html.erb:41:in `compile!'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/usr/local/src/references/app/views/users/edit.html.erb:22: odd number list for Hash
+;  styles = ['A'=> {'nil'}]
+                          ^) on line #22 of app/views/users/edit.html.erb:
+19:     <%= f.password_field :password_confirmation %>
+20:   </div>
+21:   <div class="field">
+22: 	<% styles = ['A'=> {'nil'}]-%>
+23: 	, 'endnote', 'bibitem', 'bibtex', 'rd',
+24:               'nature', 'science', 'genome_biol', 'genome_res',
+25:               'nar', 'current', 'trends', 'cell']-%>
+
+    app/views/users/edit.html.erb:41:in `compile!'
+
+Rendered rescues/_trace (96.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:34:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+ERROR: compiling _run_erb_app47views47users47edit46html46erb RAISED compile error
+/usr/local/src/references/app/views/users/edit.html.erb:22: odd number list for Hash
+Function body:           def _run_erb_app47views47users47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h2>Edit user</h2>\n\n"
+
+;  form_for(@user) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <div class=\"field\">\n    "
+
+; @output_buffer.concat(( f.label :name ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :email ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :password ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n    "
+
+
+; @output_buffer.concat(( f.label :password_confirmation, "Confirmation" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"field\">\n\t"
+
+
+;  styles = {['A','nil']}
+@output_buffer.concat "\t, 'endnote', 'bibitem', 'bibtex', 'rd',\n              'nature', 'science', 'genome_biol', 'genome_res',\n              'nar', 'current', 'trends', 'cell']-%>\n    "
+
+
+; @output_buffer.concat(( f.label :style, "Format Styles" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.select :style, styles, :selected => 'nature' ).to_s); @output_buffer.concat "\n  </div>\n  <div class=\"actions\">\n    "
+
+
+; @output_buffer.concat(( f.submit "Update" ).to_s); @output_buffer.concat "\n  </div>\n"
+
+;  end ; @output_buffer.concat "\n\n<div>\n  "
+
+
+; @output_buffer.concat(( gravatar_for @user ).to_s); @output_buffer.concat "\n  <a href=\"http://gravatar.com/emails\">change</a>\n</div>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /usr/local/src/references/app/views/users/edit.html.erb:41:in `compile!'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/peterkos/.gem/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/peterkos/.gem/ruby/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/peterkos/.gem/ruby/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/usr/local/src/references/app/views/users/edit.html.erb:22: odd number list for Hash) on line #22 of app/views/users/edit.html.erb:
+19:     <%= f.password_field :password_confirmation %>
+20:   </div>
+21:   <div class="field">
+22: 	<% styles = {['A','nil']}-%>
+23: 	, 'endnote', 'bibitem', 'bibtex', 'rd',
+24:               'nature', 'science', 'genome_biol', 'genome_res',
+25:               'nar', 'current', 'trends', 'cell']-%>
+
+    app/views/users/edit.html.erb:41:in `compile!'
+
+Rendered rescues/_trace (97.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:36:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (7.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (wrong number of arguments (3 for 4)) on line #26 of app/views/users/edit.html.erb:
+23:               'nature', 'science', 'genome_biol', 'genome_res',
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <%= f.label :style, "Format Styles" %><br />
+26:     <%= f.collection_select :style, styles, :selected => 'nature' %>
+27:   </div>
+28:   <div class="actions">
+29:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:26:in `collection_select'
+    app/views/users/edit.html.erb:26
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (103.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:38:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError ({:selected=>"nature"} is not a symbol) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A','B','C','D','E','F','G','H','I','J','K','L','M']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.collection_select :style, styles, slabels, :selected => 'nature' %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (121.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:38:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (442.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError ({:selected=>"nature"} is not a symbol) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A','B','C','D','E','F','G','H','I','J','K','L','M']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.collection_select :style, styles, slabels, {:selected => 'nature'} %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (207.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:41:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (73.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `current_user' for nil:NilClass) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A','B','C','D','E','F','G','H','I','J','K','L','M']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.collection_select :style, @User.current_user, styles, slabels, {:selected => 'nature'} %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:42:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A','B','C','D','E','F','G','H','I','J','K','L','M']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.collection_select :style, @User, styles, slabels, {:selected => 'nature'} %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (204.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:42:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `map' for #<ActionView::Helpers::FormBuilder:0x2502524>) on line #27 of app/views/users/edit.html.erb:
+24:               'nar', 'current', 'trends', 'cell']-%>
+25:     <% slabels = ['A','B','C','D','E','F','G','H','I','J','K','L','M']%>
+26:     <%= f.label :style, "Format Styles" %><br />
+27:     <%= f.collection_select :style, f, styles, slabels, {:selected => 'nature'} %>
+28:   </div>
+29:   <div class="actions">
+30:     <%= f.submit "Update" %>
+
+    app/views/users/edit.html.erb:27
+    app/views/users/edit.html.erb:3
+
+Rendered rescues/_trace (110.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:45:54) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (74.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 168ms (View: 50, DB: 76) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-06-22 19:46:07) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "id"=>"1", "controller"=>"users", "user"=>{"name"=>"Test User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "style"=>"nil", "email"=>"test@test.com"}}
+  [4;35;1mUser Columns (239.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test@test.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-23 00:46:09', `salt` = 'fbe0fab843709098c9d67f016e7567444d87661804ea12bbc8e502490616ec49', `style` = 'nil', `encrypted_password` = '0848b6b97948e2ad34e7b1eb387bdf7e64e92b9fb31f3faca18ea91bdf9c93a6' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 1993ms (DB: 242) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 19:46:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (30.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 133ms (View: 71, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 19:46:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (29.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 134ms (View: 70, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:46:14) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 81ms (View: 38, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 19:50:18) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.6ms)
+Rendered pages/_feed (53.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 144ms (View: 84, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:50:19) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 92ms (View: 49, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:55:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (13.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 100ms (View: 56, DB: 4) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:56:54) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (227.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 318ms (View: 50, DB: 229) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-06-22 19:57:12) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "id"=>"1", "controller"=>"users", "user"=>{"name"=>"Test User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "style"=>"nar", "email"=>"test@test.com"}}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test@test.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-23 00:57:12', `salt` = 'b7fdab091e02e87110adff49a65454b5ec9eb928766b8d483a13b1ffa4dc47d1', `style` = 'nar', `encrypted_password` = 'e7c46398d8a68c3fc6260fb05be9a0fa2936d420c4a015d6cd7b43119f4e45c8' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 63ms (DB: 5) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 19:57:13) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.8ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (31.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (15.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 137ms (View: 75, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 19:59:48) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.9ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.1ms)
+Rendered layouts/_stylesheets (2.3ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 149ms (View: 87, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 19:59:49) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.9ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 94ms (View: 50, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:00:44) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (7.5ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (39.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.9ms)
+Rendered pages/_feed (59.5ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.2ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 155ms (View: 93, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 20:00:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 100ms (View: 50, DB: 5) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-06-22 20:01:01) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "id"=>"1", "controller"=>"users", "user"=>{"name"=>"Test User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "style"=>"genome_biol", "email"=>"test@test.com"}}
+  [4;35;1mUser Columns (220.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'test@test.com' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-06-23 01:01:01', `salt` = 'b1d4ba3bfe9bb701c5dced0cca5d5131ae60133e257c793d41c975d9bdc075fb', `style` = 'genome_biol', `encrypted_password` = '4e77874d8eb5a8b88de2cea07033ff44fba6c8b8aa0b4093c8d41b51e569d9c8' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 279ms (DB: 224) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 20:01:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (32.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (12.3ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 134ms (View: 73, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:09:40) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (22.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (62.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.4ms)
+Rendered pages/_feed (80.3ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (15.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 299ms (View: 218, DB: 28) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:11:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.7ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.5ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (40.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.0ms)
+Rendered pages/_feed (59.3ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.8ms)
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (16.5ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 174ms (View: 106, DB: 11) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:13:48) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.8ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 156ms (View: 96, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:14:29) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (54.6ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (15.8ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 158ms (View: 98, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:15:20) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (100.9ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.5ms)
+Rendered pages/_feed (53.6ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (16.1ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 252ms (View: 192, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:16:10) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+Rendered pages/_feed (53.7ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.8ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 158ms (View: 98, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:17:15) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.1ms)
+Rendered pages/_feed (53.9ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (14.3ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 167ms (View: 106, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:19:56) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (16.6ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (15.9ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (7.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.1ms)
+Rendered pages/_feed (52.7ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 176ms (View: 87, DB: 37) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:20:32) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.9ms)
+Rendered pages/_feed (53.9ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (1.9ms)
+Completed in 147ms (View: 86, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:20:56) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (34.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.3ms)
+Rendered pages/_feed (52.4ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.2ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 146ms (View: 85, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:23:04) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (34.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.7ms)
+Rendered pages/_feed (52.8ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.8ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (4.5ms)
+Completed in 155ms (View: 96, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:25:31) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (108.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (151.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.2ms)
+Rendered pages/_feed (170.5ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.1ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.6ms)
+Rendered layouts/_footer (3.3ms)
+Completed in 375ms (View: 206, DB: 113) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:25:34) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (61.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.5ms)
+Rendered pages/_feed (79.5ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.7ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 175ms (View: 114, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:26:56) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.4ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (34.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.0ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 148ms (View: 86, DB: 9) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:28:17) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.7ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.5ms)
+Rendered pages/_feed (54.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 148ms (View: 87, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:28:44) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.8ms)
+Rendered pages/_feed (55.3ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.1ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (3.6ms)
+Completed in 246ms (View: 185, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:29:01) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.5ms)
+Rendered pages/_feed (53.4ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 148ms (View: 87, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:29:20) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.6ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (34.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (19.1ms)
+Rendered pages/_feed (55.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 149ms (View: 88, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:30:26) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.2ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 146ms (View: 86, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:31:34) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.4ms)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 242ms (View: 87, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:32:02) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;35;1mReference Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.4ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (36.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.1ms)
+Rendered pages/_feed (54.7ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (13.5ms)
+Rendered layouts/_footer (3.8ms)
+Completed in 154ms (View: 91, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:32:21) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (72.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'afeb97ada27620ef6c7c64c49abca5efcbfcc9ac0c2d0594d2c5eb898674ef6a') LIMIT 1[0m
+  [4;36;1mReference Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (0.5ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.3ms)
+Rendered pages/_feed (53.0ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.3ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 219ms (View: 87, DB: 77) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-22 20:32:28) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:32:28) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.4ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-06-22 20:33:23) [GET]
+  Parameters: {"action"=>"about", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (2.4ms)
+Rendered layouts/_footer (3.6ms)
+Completed in 35ms (View: 24, DB: 0) | 200 OK [http://localhost/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-06-22 20:33:29) [GET]
+  Parameters: {"action"=>"contact", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.2ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 33ms (View: 23, DB: 0) | 200 OK [http://localhost/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:33:47) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:35:34) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:36:28) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:36:51) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 24ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:37:14) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.1ms)
+Completed in 23ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:37:43) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (3.2ms)
+Completed in 25ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:40:05) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (1.9ms)
+
+ActionView::TemplateError (undefined local variable or method `github' for #<ActionView::Base:0x224f4e4>) on line #4 of app/views/layouts/_footer.html.erb:
+1: <div id="footer">
+2:   <%= link_to bioruby, "http://www.bioruby.org/" %>
+3:   <%= link_to rails, "http://rubyonrails.org/" %>
+4:   <%= link_to github, "http://github.com/" %>
+5:   <ul class="navigation round">
+6:     <li><%= link_to "About", about_path %></li>
+7:     <li><%= link_to "Contact", contact_path %></li>
+
+    app/views/layouts/_footer.html.erb:4
+    app/views/layouts/application.html.erb:17
+
+Rendered rescues/_trace (119.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:40:26) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (4.4ms)
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-22 20:41:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 31ms (View: 20, DB: 0) | 200 OK [http://localhost/signin]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-22 20:41:55) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"test@test.com"}, "action"=>"create", "authenticity_token"=>"fJtucvU3G5FiTgObImYIbiEySI+FnXj4E3jssAZ19NI=", "controller"=>"sessions"}
+  [4;35;1mUser Columns (27.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mUser Update (61.8ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-06-23 01:41:55', `remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 148ms (DB: 91) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 20:41:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (65.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.7ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 170ms (View: 110, DB: 7) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:43:04) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (39.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;35;1mReference Columns (16.3ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.9ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (7.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (38.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.0ms)
+Rendered pages/_feed (57.5ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.8ms)
+Rendered layouts/_stylesheets (1.8ms)
+Rendered layouts/_header (13.6ms)
+Rendered layouts/_footer (4.6ms)
+Completed in 236ms (View: 117, DB: 60) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:43:47) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;36;1mReference Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `references`[0m
+  [4;35;1mReference Load (1.7ms)[0m   [0mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (37.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (17.1ms)
+Rendered pages/_feed (56.5ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.2ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_footer (4.4ms)
+Completed in 159ms (View: 93, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:43:55) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.8ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (36.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.6ms)
+Rendered pages/_feed (54.6ms)
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (4.4ms)
+Completed in 156ms (View: 90, DB: 8) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 20:44:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (249.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (30.2ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (13.2ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 385ms (View: 75, DB: 254) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:47:21) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (121.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (75.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.6ms)
+Rendered pages/_feed (93.8ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (5.0ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.9ms)
+Rendered layouts/_footer (4.5ms)
+Completed in 313ms (View: 130, DB: 126) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-06-22 20:47:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (11.8ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 106ms (View: 61, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-06-22 20:48:28) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;35;1mReference Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mReference Load (0.5ms)[0m   [0;1mSELECT * FROM `references` WHERE (user_id = 1) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_reference_form (6.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (35.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered pages/_feed_item (16.8ms)
+Rendered pages/_feed (53.3ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered pages/_user_info (4.9ms)
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 148ms (View: 88, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-22 20:48:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReference Load (0.6ms)[0m   [0;1mSELECT * FROM `references` WHERE (`references`.user_id = 1) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mReference Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `references`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e5d05595b8b816f7ee9f5dfb9f027c0b5143386b6af78a279ffe2b3e24982d3b') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (29.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendered references/_reference (12.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `references` WHERE (`references`.user_id = 1) [0m
+Rendered layouts/_stylesheets (1.7ms)
+Rendered layouts/_header (12.3ms)
+Rendered layouts/_footer (4.3ms)
+Completed in 158ms (View: 95, DB: 7) | 200 OK [http://localhost/users/1]

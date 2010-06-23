@@ -13,8 +13,8 @@ body {
 #header img {
   padding: 1em;
   background: #fff;
-  width: 25%;
-  height: 25%;
+  width: 15%;
+  height: 15%;
 }
 
 #content {
@@ -101,11 +101,24 @@ a.signup_button {
 }
 
 #footer {
-  text-align: center;
+  text-align: right;
   margin-top: 10px;
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#footer img {
+  display:inline;
+  margin:2px;
+  height:45px;
+  width:auto;
+  background: #fff;
+  padding: 5px;
+  float: left; 
+}
+#footer a:hover img {
+  border:1px solid #000; 
 }
 
 #footer .navigation {
