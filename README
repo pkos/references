@@ -1,6 +1,12 @@
 An application to easily collect, save, manage and export citations in multiple formats, simply by entering PubMed IDs.
 
+Reference Stacker is currently testing on Heroku
+
+http://references.heroku.com/
+
 Reference Stacker uses the BioRuby gem.
+
+http://www.bioruby.org/
 
 The Ruby on Rails tutorial by Michael Hartl is an excellent way to learn RoR.
 
