@@ -33,7 +33,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to Reference Stacker!"
+      flash[:success] = "Welcome to Reference Stacker!  Get started by clicking on 'Help'."
       redirect_to @user
     else
       @title = "Sign up"
