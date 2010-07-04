@@ -1,8 +1,10 @@
 <% medline = Bio::MEDLINE.new(reference.refblob)
-ref = medline.reference %>
+ref = medline.reference
+link = "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Citation&list_uids="+ref.pubmed-%>
 <tr>
   <td class="reference">
-    <span class="reference"><%= h ref.format(current_user.style) %></span>
+    <span class="reference"><%= h ref.format(current_user.style) %>
+	<%=link_to "Link", link, :popup=>true%></span>
     <br />
     <span class="timestamp">
       Posted <%= time_ago_in_words(reference.created_at) %> ago.

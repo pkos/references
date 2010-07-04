@@ -1,17 +1,19 @@
 <% medline = Bio::MEDLINE.new(feed_item.refblob)
-ref = medline.reference-%>
+ref = medline.reference
+link = "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Citation&list_uids="+ref.pubmed-%>
 <tr>
   <td class="gravatar">
     <%= link_to gravatar_for(feed_item.user), feed_item.user %>
   </td>
   <td class="reference">
-    <span class="reference"><%= h ref.format(current_user.style) %></span>
+    <span class="reference"><%= h ref.format(current_user.style) %>
+	<%=link_to "Link", link, :popup=>true%></span>
     <br />  
     <span class="timestamp">
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago by
     </span>
     <span class="user">
-      <%= link_to h(feed_item.user.name), feed_item.user %>
+      <%= link_to h(feed_item.user.name), feed_item.user %>.
     </span>
   </td>
   <% if current_user?(feed_item.user) %>
