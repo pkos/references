@@ -3,7 +3,7 @@ ref = medline.reference
 link = "http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Citation&list_uids="+ref.pubmed-%>
 <tr>
   <td class="reference">
-    <span class="reference"><%= h ref.format(current_user.style) %>
+    <span class="reference"><%= h ref.format(@user.style) %>
 	<%=link_to "Link", link, :popup=>true%></span>
     <br />
     <span class="timestamp">
