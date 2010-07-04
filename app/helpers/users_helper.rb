@@ -8,5 +8,4 @@ module UsersHelper
   	            ["Nucleic Acids Research", "nar"], ["Current Biology", "current"],
   	            ["Trends in *", "trends"], ["Cell Press", "cell"]])
   end
-  
 end

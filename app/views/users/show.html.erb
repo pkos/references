@@ -1,3 +1,17 @@
+<%style_name = Hash.new("Styles")
+style_name["nil"] = "General"
+style_name["endnote"] = "Endnote"
+style_name["bibitem"] = "Bibitem"
+style_name["bibtex"] = "Bibtex"
+style_name["rd"] = "Rd"
+style_name["nature"] = "Nature"
+style_name["science"] = "Science"
+style_name["genome_biol"] = "Genome Biology"
+style_name["genome_res"] = "Genome Research"
+style_name["nar"] = "Nucleic Acids Research"
+style_name["current"] = "Current Biology"
+style_name["trends"] = "Trends in *"
+style_name["cell"] = "Cell Press"%>
 <table class="profile">
   <tr>
     <td class="main">
@@ -15,7 +29,7 @@
     <td class="sidebar round">
       <strong>Name:</strong> <%= h @user.name %>
 	  <br/><strong>References:</strong> <%= @user.references.count %>
-	  <br/><strong>Style:</strong> <%= @user.style %>
+	  <br/><strong>Style:</strong> <%= style_name[@user.style]%>
     </td>
   </tr>
 </table>
