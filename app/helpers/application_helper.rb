@@ -16,7 +16,7 @@ module ApplicationHelper
   end
  
   def bioruby
-    bioruby = image_tag("bioruby-gem.png", :alt => "Bioruby", :class => "round")
+    bioruby = image_tag("bioruby-gem.png", :alt => "BioRuby", :class => "round")
   end 
   
   def rails
@@ -24,7 +24,11 @@ module ApplicationHelper
   end
   
   def github
-    rails = image_tag("github.png", :alt => "Ruby on Rails", :class => "round")
+    rails = image_tag("github.png", :alt => "GitHub", :class => "round")
+  end
+  
+  def pubmed
+    rails = image_tag("pubmed.jpg", :alt => "PubMed", :class => "round")
   end
   
   require "webrat"

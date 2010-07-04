@@ -2,7 +2,10 @@
   <table class="front">
     <tr>
       <td class="main">
-        <h2 class="reference">Which PMID?</h2>
+        <h2 class="reference">Which
+	      <a href="http://www.ncbi.nlm.nih.gov/pubmed"
+	         onclick="window.open(this.href);return false;">PMID?</a>
+	    </h2>
         <%= render 'pages/reference_form' %>
         <%= render 'pages/feed' %>
       </td>
